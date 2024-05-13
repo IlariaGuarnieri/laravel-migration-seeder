@@ -12,7 +12,7 @@ return new class extends Migration
     public function up(): void
     {
         Schema::table('trains', function (Blueprint $table) {
-            $table->tinyInteger('minutes-late')->after('in_time');
+            $table->tinyInteger('minutes_late')->after('in_time');
         });
     }
 
@@ -22,7 +22,7 @@ return new class extends Migration
     public function down(): void
     {
         Schema::table('trains', function (Blueprint $table) {
-            //
+            $table->dropColumn('minutes_late');
         });
     }
 };
