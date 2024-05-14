@@ -10,3 +10,7 @@ Numero Carrozze
 In orario
 Cancellato
 Oltre alla migration di creazione della tabella aggiungente una migration di update con rollback funzionante
+
+popolando la tabella con il seeder.
+Realizzate quindi un seeder con il Faker per l’inserimento di quanti treni volete.
+Stampate poi in una view l’elenco dei treni
