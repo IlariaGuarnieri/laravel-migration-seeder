@@ -17,7 +17,8 @@ class TrainTableSeederFaker extends Seeder
 
     public function run(Faker $faker): void
     {
-        for($i = 0; $i < 25; $i++){
+        // qui ho scritto 75 ma ho 100 risultati perche prima di 75 avevo 25, non ho poi fatto il refresh e ho fatto il db:seed che somma
+        for($i = 0; $i < 75; $i++){
             $new_train= new Train();
             // true crea stringa, se non metto true crea un array, 1 da una parola
             $new_train->company = $faker->words(1, true);
